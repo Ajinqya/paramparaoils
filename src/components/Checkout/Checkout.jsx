@@ -24,6 +24,7 @@ import LocationWhite from "../../assets/images/MapPinOutlinedWhite.svg"
 import EmptyCart from "../../assets/images/cartImg.svg"
 import { useRef } from 'react';
 
+import axios from 'axios'
 
 
 
@@ -143,6 +144,33 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
     }
 
 
+
+    const submitForm = async () => {
+
+        const obj = {
+            firstName: formDetails?.first_name,
+            lastName: formDetails?.last_name,
+            email: formDetails?.email,
+            "address": formDetails?.address,
+            "pinCode": formDetails?.pincode,
+            "contactNumber": formDetails?.phone,
+            'orders': [
+                ...cart
+            ]
+        }
+
+
+        return axios.post('https://parampara-oils.herokuapp.com/api/orders/new-order', obj).then(data => {
+            // console.log(data);
+            setStep(3);
+        }).catch(err => {
+            console.log(err)
+        })
+
+
+    }
+
+
     const validate = () => {
 
         function validateEmail(email) {
@@ -158,12 +186,15 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
             return addProduct('Email not valid')
         }
 
-        setStep(3);
-        window.scrollTo(0, 0)
+        submitForm()
+
+        // window.scrollTo(0, 0)
     }
 
 
     const refSection = useRef(null);
+
+
 
 
     return (
@@ -505,11 +536,8 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
                                                 </button>
                                                 <div className='flex sm:flex-row flex-col gap-3 '>
                                                     <ButtonGradient title={'Got it'} className={'md:w-auto w-[100%]'} onClick={() => {
-                                                        onClose(); setCart([]) 
-                                                        // window.scrollTo({
-                                                        //     top: refSection.current.offsetTop,
-                                                        //     behavior: 'smooth'
-                                                        // });
+                                                        onClose();
+                                                        setCart([])
                                                     }} />
                                                 </div>
                                             </div>

@@ -7,7 +7,7 @@ import ic1 from "../../assets/images/ChartBar.svg"
 import ic3 from "../../assets/images/CalendarBlank.svg"
 import ic2 from "../../assets/images/DropHalfBottom.svg"
 import ic4 from "../../assets/images/Tree.svg"
-import ic5 from "../../assets/images/Snowflake.svg"
+import ic5 from "../../assets/images/Drop.svg"
 import ic6 from "../../assets/images/BeerBottle.svg"
 
 
@@ -179,11 +179,11 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
 
         <div className='container  mx-auto'>
           <div className=''>
-            <h2 className='md:text-Medium+/Title/xLarge text-Small/Title/xLarge text-Neutral80'>Straightforward & Transparent Process</h2>
+            <h2 className='md:text-Medium+/Title/xLarge text-Small/Title/xLarge text-Neutral80'>Process as simple as squeezing juice</h2>
             <p className='md:text-Medium+/Paragraph/Large text-Small/Paragraph/Large text-Neutral70 mt-[8px]'>We love sharing how we produce our products,
               {
                 showBreak ? <br /> : null
-              }  you exactly know what you are getting into your kitchen. </p>
+              }  you exactly know what you are getting into your kitchen.</p>
 
           </div>
 
@@ -249,83 +249,141 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
 
       {/* SECTION 2 */}
 
+
+      {/* SECTION  */}
+
+      <section className='md:py-[120px] pt-[64px] bg-Primary10'>
+        <div className="container  mx-auto">
+          <h2 className="text-Small/Title/xLarge md:text-Medium+/Title/xLarge text-Neutral80">All the natural qualities remain  {showBreak ? <br /> : null}
+            intact in the final product</h2>
+          <p className='text-Small/Paragraph/Large md:Ltext-Medium+/Paragraph/Large mt-[8px] text-Neutral70'>Our process makes you experience purity of the oil in all forms.
+            {showBreak ? <br /> : null}
+            Our oils are 100% natural & chemical free.</p>
+
+          <div className='mt-[64px] grid grid-cols-10'>
+            <div class=" sm:col-span-6 col-span-10">
+              <div class="grid grid-cols-1 gap-[24px] lg:grid-cols-2">
+                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
+                  <div class="flex flex-col ">
+                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Secondary60">
+                      <img src={Hearbeat} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+                    </div>
+                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">Rich in nutrients</p>
+                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>All the nutrients from the seeds are intact as no chemical processing is done.</p>
+                  </div>
+                </div>
+
+
+                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
+                  <div class="flex flex-col ">
+                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Yellow70">
+                      <img src={Wind} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+                    </div>
+                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">Aroma like the seed</p>
+                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>You get the typical seed aroma, which is a proof of purity.</p>
+                  </div>
+                </div>
+
+
+                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
+                  <div class="flex flex-col ">
+                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Blue70">
+                      <img src={Sparkle} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+                    </div>
+                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">Retained color </p>
+                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>Looking at the oil, you can tell the seed the oil was made from.</p>
+                  </div>
+                </div>
+
+
+                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
+                  <div class="flex flex-col ">
+                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Primary50">
+                      <img src={Leaf} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+                    </div>
+                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">No added preservatives</p>
+                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>We don’t add any preservatives. What you get is a 100% natural product.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="sm:col-span-4 col-span-10 z-10 flex relative m-auto md:m-0 ">
+              <img src={Hand2} alt="" className='bottom-[-120px] z-10 right-[0px] sm:absolute sm:w-[75%] h-[515px] z-10  right ' />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      {/* SECTION 3 */}
+      <section className='md:py-[120px] py-[64px] bg-[#FAFAFA]'>
+
+        <div className='container  mx-auto'>
+          <div className=''>
+            <h2 className='text-Neutral80 md:text-Medium+/Title/xLarge text-Small/Title/xLarge text-Neutral80'>If cold pressed oil is so good, {showBreak ? <br /> : null}
+              Why is oil refined at all??</h2>
+            <p className='text-Neutral70 md:text-Medium+/Paragraph/Large text-Small/Paragraph/Large mt-[8px] text-Neutral70'>Most large-scale commercial cooking oil refinement will involve solvent <br />  extraction in order to achieve a product with the following properties:  </p>
+
+          </div>
+
+
+          <div className="card-box flex md:mt-[64px] mt-[40px] justify-between gap-4 grid sm:grid-cols-3 grid-cols-1">
+
+            <div className="card bg-Neutral10 md:p-[24px] p-[16px] rounded-[8px] flex flex-col col-span-1">
+              <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Secondary60">
+                <img src={ic1} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+              </div>
+              <h6 className='md:text-Medium+/Title/Small text-Small/Title/Small text-Neutral70 mt-[16px]'>Increased output</h6>
+              <p className='md:text-Medium+/Paragraph/Medium text-Small/Paragraph/Medium text-Neutral70 mt-[8px]'>During solvent extraction, addition of heat & solvents enable achieving a very high output. Less raw material, more of solvents in the oil.  </p>
+            </div>
+
+            <div className="card bg-Neutral10 md:p-[24px] p-[16px] mt-[16px] md:mt-[0px] rounded-[8px] flex flex-col col-span-1">
+              <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Primary70">
+                <img src={ic2} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+              </div>
+              <h6 className='md:text-Medium+/Title/Small text-Small/Title/Small text-Neutral70 mt-[16px]'>Removed color & aroma</h6>
+              <p className='md:text-Medium+/Paragraph/Medium text-Small/Paragraph/Medium text-Neutral70 mt-[8px]'>By bleaching process, oil looking as clear as water and without any aroma is achieved. Result is tasteless and colorless oil.</p>
+            </div>
+
+
+            <div className="card bg-Neutral10 md:p-[24px] p-[16px] mt-[16px] md:mt-[0px] rounded-[8px] flex flex-col col-span-1">
+              <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Blue70">
+                <img src={ic3} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
+              </div>
+              <h6 className='md:text-Medium+/Title/Small text-Small/Title/Small text-Neutral70 mt-[16px]'>Increased shelf life</h6>
+              <p className='md:text-Medium+/Paragraph/Medium text-Small/Paragraph/Medium text-Neutral70 mt-[8px]'>Addition of preservatives makes sure that it can be kept on the shelf for longer time. We believe you’d want a fresher product in your kitchen.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
       <>
         {/* component */}
         <div className="bg-[#186218] md:py-[120px] py-[40px]">
 
           <div className="container  mx-auto">
             <div className=" ">
-              <h2 className='md:text-Medium+/Title/xLarge text-Small/Title/xLarge text-Neutral10'>Eating healthy starts with choosing <br />
-                a healthy oil to cook with.</h2>
-              <p className='text-white  mt-[8px] md:text-Medium+/Paragraph/Large text-Small/Paragraph/Large text-Neutral30'>A comparison of refined oil and cold pressed oil would help you understand the key <br />
+              <h2 className='md:text-Medium+/Title/xLarge text-Small/Title/xLarge text-Neutral10'>Should you stop cooking with {showBreak ? <br /> : null} refined oil? Decide yourself
+              </h2>
+              <p className='text-white  mt-[8px] md:text-Medium+/Paragraph/Large text-Small/Paragraph/Large text-Neutral30'>A comparison of refined oil and cold pressed oil would help you understand the key {showBreak ? <br /> : null}
                 differences between the two. Make an informed decision concerning your health.</p>
             </div>
 
             <div className="md:mt-[64px] mt-[24px]  grid grid-cols-1 gap-[24px] lg:grid-cols-2">
-              <div className="bg-Danger10 rounded-[8px] md:px-[24px] md:py-[32px] px-[16px] py-[24px] ">
-                <div >
-                  <p className="md:text-Medium+/Title/Small text-Small/Title/Small text-Danger70">
-                    Refined Oil
-                  </p>
-                </div>
-                <div className="mt-[24px] md:mt-[40px]">
-                  <div className="flex items-center ">
-                    <img src={GearSix} alt="" />
-                    <p
-                      className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
-                    >Process involved</p>
-                  </div>
-                  <h2 className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'>Solvent Extraction </h2>
-                  <p className='md:text-Medium+/Paragraph/Small text-Small/Paragraph/Small text[#555555] mt-[4px] '>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p>
-                </div>
 
-                <hr className='h-[1px] bg-[#DCDCDC] text-[#DCDCDC] mt-[24px]' />
-
-                <div className="item mt-[24px]">
-                  <div className="flex items-center ">
-                    <img src={Flask} alt="" />
-                    <p
-                      className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
-                    >Solvents added</p>
-                  </div>
-                  <h2 className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'>NaOH, Fuller’s earth, CH3-CH2-OH (Ethanol) </h2>
-                  {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
-                </div>
-                <hr className='h-[1px] bg-[#DCDCDC] text-[#DCDCDC] mt-[24px]' />
-
-
-                <div className="item mt-[24px]">
-                  <div className="flex items-center ">
-                    <img src={Thermometer} alt="" />
-                    <p
-                      className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
-                    >Temperature heated to</p>
-                  </div>
-                  <h2 className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'>Upto 300°C  </h2>
-                  {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
-                </div>
-                <hr className='h-[1px] bg-[#DCDCDC] text-[#DCDCDC] mt-[24px]' />
-
-
-                <div className="item mt-[24px]">
-                  <div className="flex items-center ">
-                    <img src={TestTube} alt="" />
-                    <p
-                      className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
-                    >Preservatives added</p>
-                  </div>
-                  <h2
-                    className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'
-                  >BHT, BHA and tocopherol </h2>
-                  {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
-                </div>
-
-                <button className={`border-[#dcdcdc] bg-Danger60 w-[100%] md:w-auto text-Neutral10 py-[16px] px-[24px] md:text-Medium+/Label/Large-Strong text-Medium+/Label/Medium-Strong gap-[19px] cursor-default rounded-[8px] flex  gap-3 mt-[40px] items-center w-[fit-content] `}>
-                  <img src={ThumbsDown} alt="" /> Not recommended for health
-                </button>
-
-
-              </div>
               <div className="bg-Primary10 rounded-[8px] md:px-[24px] md:py-[32px] px-[16px] py-[24px] ">
                 <div >
                   <p className="md:text-Medium+/Title/Small text-Small/Title/Small text-Primary60">
@@ -380,12 +438,12 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
                   </div>
                   <h2
                     className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'
-                  >None</h2>
+                  >None (As natural as it gets)</h2>
                   {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
                 </div>
 
                 <button
-                  className={`border-[#dcdcdc] highlighted-color text-Neutral10 md:py-[16px] py-[14px] justify-center px-[24px] md:text-Medium+/Label/Large-Strong md:text-Medium+/Label/Medium-Strong w-[100%] md:w-auto text-center gap-[19px]  rounded-[8px] flex  gap-3 mt-[40px] items-center w-[fit-content] grad-btn`}
+                  className={`border-[#dcdcdc] highlighted-color text-Neutral10 md:py-[16px] py-[14px] justify-center px-[24px] md:text-Medium+/Label/Large-Strong text-Medium+/Label/Medium-Strong w-[100%] md:w-auto text-center gap-[19px]  rounded-[8px] flex  gap-3 mt-[40px] items-center w-[fit-content] grad-btn`}
                   onClick={scrollToProducts}
                 >
                   See Available Options
@@ -393,6 +451,75 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
 
 
               </div>
+
+              <div className='bg-Danger10 flex flex-col rounded-[8px]'>
+
+                <div className="bg-Danger10  rounded-[8px] md:px-[24px] md:py-[32px] px-[16px] py-[24px]">
+                  <div >
+                    <p className="md:text-Medium+/Title/Small text-Small/Title/Small text-Danger70">
+                      Refined Oil
+                    </p>
+                  </div>
+                  <div className="mt-[24px] md:mt-[40px]">
+                    <div className="flex items-center ">
+                      <img src={GearSix} alt="" />
+                      <p
+                        className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
+                      >Process involved</p>
+                    </div>
+                    <h2 className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'>Solvent Extraction (Read: a lot of chemicals) </h2>
+                    <p className='md:text-Medium+/Paragraph/Small text-Small/Paragraph/Small text[#555555] mt-[4px] '>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p>
+                  </div>
+
+                  <hr className='h-[1px] bg-[#DCDCDC] text-[#DCDCDC] mt-[24px]' />
+
+                  <div className="item mt-[24px]">
+                    <div className="flex items-center ">
+                      <img src={Flask} alt="" />
+                      <p
+                        className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
+                      >Solvents added</p>
+                    </div>
+                    <h2 className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'>NaOH, Fuller’s earth, CH3-CH2-OH (Alcohol?) </h2>
+                    {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
+                  </div>
+                  <hr className='h-[1px] bg-[#DCDCDC] text-[#DCDCDC] mt-[24px]' />
+
+
+                  <div className="item mt-[24px]">
+                    <div className="flex items-center ">
+                      <img src={Thermometer} alt="" />
+                      <p
+                        className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
+                      >Temperature heated to</p>
+                    </div>
+                    <h2 className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'>Upto 300°C (Will the natural qualities survive?)  </h2>
+                    {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
+                  </div>
+                  <hr className='h-[1px] bg-[#DCDCDC] text-[#DCDCDC] mt-[24px]' />
+
+
+                  <div className="item mt-[24px]">
+                    <div className="flex items-center ">
+                      <img src={TestTube} alt="" />
+                      <p
+                        className='ml-[9px] text-Neutral60 md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong'
+                      >Preservatives added</p>
+                    </div>
+                    <h2
+                      className='text-Neutral70 text-Small/Title/xSmall md:text-Medium+/Title/xSmall mt-[8px]'
+                    >BHT, BHA and tocopherol (What even is this?)</h2>
+                    {/* <p className='text-[#555555]'>Degumming, Neutralization, Bleaching, Dewaxing, Deodorizing</p> */}
+                  </div>
+
+
+                </div>
+                <div className={`border-[#dcdcdc] bg-Danger60 w-[100%] mt-auto md:w-auto text-Neutral10 md:py-[36px] py-[16px] px-[24px] md:text-Medium+/Label/Large-Strong text-Medium+/Label/Medium-Strong gap-[19px] cursor-default rounded-b-[8px]  flex  gap-3  items-center w-[fit-content] `}>
+                  <img src={ThumbsDown} alt="" /> Not recommended for health
+                </div>
+              </div>
+
+
             </div>
           </div>
 
@@ -401,50 +528,10 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
 
 
 
-      {/* SECTION 3 */}
-      <section className='md:py-[120px] py-[64px] bg-Primary10'>
-
-        <div className='container  mx-auto'>
-          <div className=''>
-            <h2 className='text-Neutral80 md:text-Medium+/Title/xLarge text-Small/Title/xLarge text-Neutral80'>Why is oil refined?</h2>
-            <p className='text-Neutral70 md:text-Medium+/Paragraph/Large text-Small/Paragraph/Large mt-[8px] text-Neutral70'>Most large-scale commercial cooking oil refinement will involve solvent <br /> extraction in order to achieve a product with the following properties: </p>
-
-          </div>
 
 
-          <div className="card-box flex md:mt-[64px] mt-[40px] justify-between gap-4 grid sm:grid-cols-3 grid-cols-1">
-
-            <div className="card bg-Neutral10 md:p-[24px] p-[16px] rounded-[8px] flex flex-col col-span-1">
-              <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Secondary60">
-                <img src={ic1} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-              </div>
-              <h6 className='md:text-Medium+/Title/Small text-Small/Title/Small text-Neutral70 mt-[16px]'>Increased output</h6>
-              <p className='md:text-Medium+/Paragraph/Medium text-Small/Paragraph/Medium text-Neutral70 mt-[8px]'>During solvent extraction, addition of heat & solvents enable achieving a very high output.  </p>
-            </div>
-
-            <div className="card bg-Neutral10 md:p-[24px] p-[16px] mt-[16px] md:mt-[0px] rounded-[8px] flex flex-col col-span-1">
-              <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Primary70">
-                <img src={ic2} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-              </div>
-              <h6 className='md:text-Medium+/Title/Small text-Small/Title/Small text-Neutral70 mt-[16px]'>Removed color & aroma</h6>
-              <p className='md:text-Medium+/Paragraph/Medium text-Small/Paragraph/Medium text-Neutral70 mt-[8px]'>By bleaching process, oil looking as clear as water and without any aroma is achieved.</p>
-            </div>
 
 
-            <div className="card bg-Neutral10 md:p-[24px] p-[16px] mt-[16px] md:mt-[0px] rounded-[8px] flex flex-col col-span-1">
-              <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Blue70">
-                <img src={ic3} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-              </div>
-              <h6 className='md:text-Medium+/Title/Small text-Small/Title/Small text-Neutral70 mt-[16px]'>Increased shelf life</h6>
-              <p className='md:text-Medium+/Paragraph/Medium text-Small/Paragraph/Medium text-Neutral70 mt-[8px]'>Addition of preservatives makes sure that it can be kept on the shelf for longer time.</p>
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </section>
 
 
       {/* SECTION 4 */}
@@ -463,71 +550,10 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
 
       {/* SECTION 5 */}
 
-      <section className='md:py-[120px] pt-[64px] bg-Primary10'>
-        <div className="container  mx-auto">
-          <h2 className="text-Small/Title/xLarge md:text-Medium+/Title/xLarge text-Neutral80">Never compromise on the {showBreak ? <br /> : null}
-            quality of what you cook with</h2>
-          <p className='text-Small/Paragraph/Large md:Ltext-Medium+/Paragraph/Large mt-[8px] text-Neutral70'>Experience purity of the oil in all forms. 100% natural & chemical free.</p>
 
-          <div className='mt-[64px] grid grid-cols-10'>
-            <div class=" sm:col-span-6 col-span-10">
-              <div class="grid grid-cols-1 gap-[24px] lg:grid-cols-2">
-                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
-                  <div class="flex flex-col ">
-                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Secondary60">
-                      <img src={Hearbeat} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-                    </div>
-                    <p className="mt-[16px] text-Medium+/Title/Small text-Neutral80">Rich in nutrients</p>
-                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>All the nutrients from the seeds are intact as no chemical processing is done.</p>
-                  </div>
-                </div>
-
-
-                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
-                  <div class="flex flex-col ">
-                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Yellow70">
-                      <img src={Wind} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-                    </div>
-                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">Aroma like the seed</p>
-                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>You get the typical seed aroma, which is a proof of purity.</p>
-                  </div>
-                </div>
-
-
-                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
-                  <div class="flex flex-col ">
-                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Blue70">
-                      <img src={Sparkle} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-                    </div>
-                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">Retained color </p>
-                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>Looking at the oil, you can tell the seed the oil was made from.</p>
-                  </div>
-                </div>
-
-
-                <div class="overflow-hidden rounded-[8px] bg-Neutral10 p-[24px] md:p-[24px] p-[16px]">
-                  <div class="flex flex-col ">
-                    <div className="round h-[56px] w-[56px] relative flex align-center rounded-full bg-Primary50">
-                      <img src={Leaf} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[25px]" alt="" />
-                    </div>
-                    <p className="mt-[16px] text-Small/Title/Small md:text-Medium+/Title/Small text-Neutral80">No added preservatives</p>
-                    <p className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium text-Neutral70 mt-[8px]'>We don’t add any preservatives. What you get is a 100% natural product.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div className="sm:col-span-4 col-span-10 z-10 flex relative m-auto md:m-0 ">
-              <img src={Hand2} alt="" className='bottom-[-120px] z-10 right-[0px] sm:absolute sm:w-[75%] h-[515px] z-10  right ' />
-            </div>
-          </div>
-
-        </div>
-      </section>
 
       {/* Products */}
-      <div className='pt-[120px] pb-[360px] bg-Neutral20' ref={productRef}>
+      <div className='md:py-[120px] py-[64px] bg-Neutral20' ref={productRef}>
         <div className="container  mx-auto">
           <div className='text-Small/Title/xLarge md:text-Medium+/Title/xLarge text-Neutral80'>Our products</div>
           <div className='text-Small/Paragraph/Large md:text-Medium+/Paragraph/Large text-Neutral70 mt-[8px]'>Explore through our range of cold pressed oils and get started with a healthy lifestyle today.</div>
@@ -551,9 +577,9 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
 
       {/* <ItemCard/> */}
 
-      <div className=" relative bg-Neutral10">
+      <div className=" md:pb-[120px] pb-[64px] relative bg-Neutral10">
 
-        <div className="container mx-auto  translate-y-[-50%] ">
+        <div className="container mx-auto   ">
 
           {
             cart && cart.length != 0 ?
@@ -564,7 +590,7 @@ const Home = ({ cart, setCart, onOpen, scrollToProducts, productRef, cartCount, 
         </div>
 
       </div>
-      <div className='md:py-[120px] pb-[64px]'>
+      <div className='md:py-[120px] py-[64px]'>
         <div className="container  mx-auto">
           <Faq />
         </div>

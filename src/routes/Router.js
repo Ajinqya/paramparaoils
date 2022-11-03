@@ -7,6 +7,36 @@ import Home from '../pages/Home/Home';
 import { ROUTES } from './RouterConfig';
 import { useDisclosure } from '@chakra-ui/react'
 import { useEffect } from 'react';
+import { GetCustomerTemplate } from '../pages/Test/Test';
+
+
+
+const data = {
+  "firstName": "name",
+  "lastName": "name",
+  "email": "name@yopmail.com",
+  "address": "address",
+  "pinCode": "133142",
+  "contactNumber": "9661363181",
+  "orders": [
+    {
+      "id": 2,
+      "name": "Cold Pressed Groundnut Oil",
+      "count": 1,
+      "quantity": "500mL",
+      "price": "185.00",
+      "image": "./assets/GNT500.png"
+    },
+    {
+      "id": 3,
+      "name": "Cold Pressed Groundnut Oil",
+      "count": 1,
+      "quantity": "1000mL",
+      "price": "350.00",
+      "image": "./assets/GNT1000.png"
+    }
+  ]
+}
 
 
 const Router = () => {
@@ -73,9 +103,10 @@ const Router = () => {
   return (
     <div>
       <Routes>
-
         <Route exact path={ROUTES.Home} element={<RouteWithRole toast={toast} addProduct={addProduct} Element={Home} />}></Route>
         <Route exact path={ROUTES.About} element={<RouteWithRole Element={About} />}></Route>
+        <Route exact path={'/test'} element={< GetCustomerTemplate firstName={data?.firstName} lastName={data?.lastName} orders={data?.orders} contactNumber={data?.contactNumber} address={data?.address} pinCode={data?.pinCode} total={data?.total} />}></Route>
+
       </Routes>
     </div>
   )

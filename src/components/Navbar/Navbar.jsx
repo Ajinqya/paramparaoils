@@ -9,7 +9,7 @@ const Navbar = ({onOpen, scrollToProducts,  cartCount}) => {
             <img src={logo} alt="logo" className='md:h-[40px] h-[24px]'/>
             <div className='flex '>
                 <button className='hidden md:block text-Medium+/Label/Medium text-[#494949] hover:text-[#726C6B]' onClick={scrollToProducts}>Browse Products</button>
-                <button className='md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong text-Primary60 text-[#4EA24E] md:ml-[48px] flex items-center' onClick={onOpen}>
+                <button className='md:text-Medium+/Label/Medium-Strong text-Small/Label/Medium-Strong hover:text-[#7AB97A] text-[#228B22] md:ml-[48px] flex items-center' onClick={onOpen}>
                      Your Bag 
                      <div className='ml-[10px]'>
                         <div className="absolute h-[20px] w-[20px] bg-Primary80 flex items-center justify-center rounded-full text-Medium+/Paragraph/xSmall-Strong text-Neutral10  text-sm translate-x-[12px] -translate-y-[7px]">{cartCount}</div>

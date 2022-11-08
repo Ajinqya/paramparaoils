@@ -6,10 +6,10 @@ import Router from './routes/Router';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter 
-      basename={process.env.PUBLIC_URL}
+      <BrowserRouter
+        basename={process.env.PUBLIC_URL}
       >
-        <Router/>
+        <Router />
       </BrowserRouter>
     </div>
   );

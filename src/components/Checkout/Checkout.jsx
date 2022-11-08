@@ -43,6 +43,8 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
         return s
     })
 
+    const [loading, setLoading] = useState(false)
+
     const addQuantity = (id) => {
         console.log(id)
 
@@ -105,6 +107,8 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
         phone: ''
     });
 
+
+
     const handleChange = (e) => {
         const {
             name, value
@@ -159,12 +163,15 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
             ]
         }
 
+        setLoading(true)
 
         return axios.post('https://parampara-oils.herokuapp.com/api/orders/new-order', obj).then(data => {
             // console.log(data);
             setStep(3);
+            setLoading(false)
         }).catch(err => {
             console.log(err)
+            setLoading(false)
         })
 
 
@@ -443,7 +450,14 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
                                                 </button>
                                                 <div className='flex sm:flex-row flex-col  md:m-0 gap-[16px] '>
                                                     <ButtonOutline onClick={() => { setStep(1) }} title={'Back to Bag'} color={'#228B22'} textColor={'#228B22'} className={'text-Primary60 border-Primary60 text-Medium+/Label/Large-Strong hover:bg-Primary10 w-[100%] md:w-auto'} />
-                                                    <ButtonGradient title={'Place Order'} className={'w-[100%] md:w-auto'} onClick={() => { validate() }} />
+
+                                                    {
+                                                        loading ?
+                                                            <button className={`md:text-Medium+/Label/Large-Strong text-Medium+/Label/Medium-Strong md:py-[16px] md:px-[24px] py-[14px] px-[16px] grad-btn highlighted-color text-Neutral10 w-[fit-content] rounded-[8px] `}>
+                                                                <i class="fa fa-circle-o-notch fa-spin mr-[10px] "></i>Placing Your Order 
+                                                            </button>
+                                                            : <ButtonGradient title={'Place Order'} className={'w-[100%] md:w-auto'} onClick={() => { validate() }} />
+                                                    }
                                                 </div>
                                             </div>
                                         </ModalFooter>
@@ -531,7 +545,7 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
 
                                             <div className='w-full flex sm:flex-row gap-3 flex-col justify-between'>
 
-                                                <button className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium flex justify-center items-center p-[16px] bg-Neutral20 rounded-[4px] text-Neutral70 flex-col  md:flex-row' onClick={onClose}>
+                                                <button className='text-Small/Paragraph/Medium md:text-Medium+/Paragraph/Medium flex justify-center items-center p-[16px] bg-Neutral20 rounded-[4px] text-Neutral70 flex-col  md:flex-row cursor-default' >
                                                     Something is off? Call us on <br /> <span className='text-Small/Paragraph/Medium-Strong md:text-Medium+/Paragraph/Medium-Strong'> +91 6261 867 936</span>
                                                 </button>
                                                 <div className='flex sm:flex-row flex-col gap-3 '>

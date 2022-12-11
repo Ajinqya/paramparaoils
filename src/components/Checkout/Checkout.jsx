@@ -165,7 +165,7 @@ const Checkout = ({ isOpen, onOpen, onClose, cart, setCart, scrollToProducts }) 
 
         setLoading(true)
 
-        return axios.post('https://parampara-oils.herokuapp.com/api/orders/new-order', obj).then(data => {
+        return axios.post('https://parampara-backend.onrender.com/api/orders/new-order', obj).then(data => {
             // console.log(data);
             setStep(3);
             setLoading(false)

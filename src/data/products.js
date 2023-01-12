@@ -87,21 +87,21 @@ export const productsArray = [
         id: 10,
         name: 'Cold Pressed Sesame Oil',
         quantity: '250mL',
-        price: '135.00',
+        price: '148.00',
         image: './assets/SSM250.png'
     },
     {
         id: 11,
         name: 'Cold Pressed Sesame Oil',
         quantity: '500mL',
-        price: '260.00',
+        price: '285.00',
         image: './assets/SSM500.png'
     },
     {
         id: 12,
         name: 'Cold Pressed Sesame Oil',
         quantity: '1000mL',
-        price: '500.00',
+        price: '550.00',
         image: './assets/SSM1000.png'
     },
 ]

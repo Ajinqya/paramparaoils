@@ -28,7 +28,7 @@
 
 
     .chakra-modal__content-container {
-        min-height: 10vh !important;
+        min-height: 30vh !important;
         bottom: 0;
         top: auto !important;
         max-height: 90vh;
@@ -62,7 +62,7 @@ body {
 }
 
 .chakra-modal__content-container {
-    min-height: 90vh;
+    min-height: auto;
 }
 
 .grad-btn:hover {
